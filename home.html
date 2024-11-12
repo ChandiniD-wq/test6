@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt4Love</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <header role="banner">
+    <nav role="navigation" aria-label="Main Navigation">
+        <img src="https://www.shutterstock.com/image-vector/logo-dogs-cats-260nw-1190098948.jpg" alt="Adopt4love Logo" aria-label="Adopt4Love Logo">
+        <h1>Adopt4Love</h1>
+        <div class="nav-links" role="menubar"> 
+            <a href="#" role="menuitem">Home</a>
+            <div class="dropdown" role="menuitem">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Adopt or Get Involved</a>
+                <div class="dropdown-content" role="menu">
+                    <a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=1-143&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" role="menuitem">Dogs & Puppies</a>
+                    <a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=1-51&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" role="menuitem">Cats & Kittens</a>
+                    <a href="#" role="menuitem">Other Types of Pets</a>
+                </div>
+            </div>
+            <a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=1-188&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" role="menuitem">About Us</a>
+            <a href="#" role="menuitem">Contact Us</a>
+            <a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=84-30&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" role="menuitem">Success Stories</a>
+            <a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=1-99&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" role="menuitem">Sign Up</a>
+        </div>
+    </nav>    
+  </header>
+
+ <div class="search-container" role="search">
+  
+  <input type="text" id="search-bar" placeholder="Search for pets, services, etc." aria-label="Search bar" />
+  <button type="submit" aria-label="Search button">Search</button>
+ </div>
+
+<div class="headline">
+  <h2>FIND YOUR NEW BESTFRIEND</h2>
+</div>
+
+<section class="image-gallery" aria-labelledby="gallery-heading">
+   
+    <div class="image-item">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/005/857/332/small_2x/funny-portrait-of-cute-corgi-dog-outdoors-free-photo.jpg" 
+           alt="Portrait of a cute Corgi dog outdoors" 
+           aria-labelledby="dog-info" role="link" tabindex="0" onclick="redirectToDog()" />
+      <p id="dog-info">Information on Dogs</p>
+    </div>
+  
+    <div class="image-item">
+      <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?cs=srgb&dl=pexels-kmerriman-20787.jpg&fm=jpg" 
+           alt="Portrait of a cat sitting on a chair" 
+           aria-labelledby="cat-info" role="link" tabindex="0" onclick="redirectToCat()" />
+      <p id="cat-info">Information on Cats</p>
+    </div>
+  
+    <div class="image-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Oryctolagus_cuniculus_Rcdo.jpg" 
+           alt="A rabbit sitting on the grass" 
+           aria-labelledby="pets-info" role="link" tabindex="0" onclick="redirectToOtherAnimals()" />
+      <p id="pets-info">Information on Pets</p>
+    </div>
+  </section>
+
+<section class="container">
+  <div class="text-container">
+    <h2 aria-label="List of pets available for adoption nearby">Pets Available for Adoption Nearby</h2>
+  </div>
+  <div class="map-container">  
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196526.42610564153!2d-105.26623249053956!3d39.67839104047085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7e3624e74d4d%3A0xd387694581b490f4!2sFerret%20Dreams%20Rescue%20%26%20Adoption!5e0!3m2!1sen!2sus!4v1729274843735!5m2!1sen!2sus" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map showing nearby adoption centers">
+      </iframe>
+  </div> 
+</section>
+
+<footer role="contentinfo">
+  <ul aria-label="Footer Navigation Links">
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=84-30&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Success Stories</a></li>
+      <li><a href="https://www.figma.com/proto/AONiMtYL1wxWe9jc42wBGn/prototype?node-id=1-188&node-type=canvas&t=mf4O9OfRPvxB66sv-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">About Us</a></li>
+  </ul>
+</footer>
+
+<script src="home.js"></script>
+</body>
+</html>
